@@ -1,0 +1,39 @@
+<div>
+    <h1>Lista de productos</h1>
+    <ul>
+        {{#each products}}
+        <li>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <p>Precio: {{price}}</p>
+            <p>Thumbnail: <img src="{{thumbnail}}" alt="Thumbnail"></p>
+            <p>Código: {{code}}</p>
+            <p>Stock: {{stock}}</p>
+            <hr>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+<div>
+    <form class= "formSocket" id="formSocket">
+  <label for="title">Title:</label>
+  <input type="text" id="title" name="title"><br>
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description"></textarea><br>
+
+  <label for="price">Price:</label>
+  <input type="number" id="price" name="price"><br>
+
+  <label for="code">Code:</label>
+  <input type="text" id="code" name="code"><br>
+
+  <label for="stock">Stock:</label>
+  <input type="number" id="stock" name="stock"><br>
+
+  <input type="submit" value="Agregar producto">
+</form>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>

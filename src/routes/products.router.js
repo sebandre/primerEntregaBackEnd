@@ -4,16 +4,17 @@ import ProductManager from "../ProductManager.js";
 const productManager = new ProductManager("./src/products.json");
 const productsRouter = Router();
 
+
 // View all products
 productsRouter.get('/', async (req, res) => {
     try{
         const limit = req.query.limit;
-    const products = await productManager.getProducts();
-    if (limit){
-        res.status(200).json(products.slice(0, limit));
-    } else{
-        res.status(200).json(products);
-    }
+        const products = await productManager.getProducts();
+        if (limit){
+            res.status(200).json(products.slice(0, limit));
+        } else{
+            res.status(200).json(products);
+        }
     }
     catch (error) {
         res.status(500).json({message: 'Error encountered'});
@@ -24,7 +25,8 @@ productsRouter.get('/', async (req, res) => {
 productsRouter.get('/:id', async (req, res) => {
     try{
         const {id} = req.params;
-    const product = await productManager.getProductById(parseInt(id));
+        const product = await productManager.getProductById(parseInt(id));
+        console.log(product)
     if (product) {
         res.status(200).json(product);
     } else {

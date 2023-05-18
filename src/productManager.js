@@ -23,7 +23,7 @@ class ProductManager {
     }
   }
 
-  async addProduct(title, description, price, status, thumbnail, code, stock) {
+  async addProduct({title, description, price, status, thumbnail, code, stock}) {
     await this.init();
     const product = {
       pid: this.lastId + 1,
@@ -47,7 +47,7 @@ class ProductManager {
 
   async getProductById(productId) {
     await this.init();
-    const product = this.products.find((p) => p.id === productId);
+    const product = this.products.find((p) => p.pid === productId);
     if (product) {
       return product;
     } else {
