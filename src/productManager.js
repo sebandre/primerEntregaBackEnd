@@ -5,6 +5,7 @@ class ProductManager {
   constructor(path) {
     this.path = path;
     this.products = [];
+    console.log(this.path);
   }
   
 
@@ -29,11 +30,11 @@ class ProductManager {
       pid: this.lastId + 1,
       title,
       description,
-      price,
-      status,
+      price: +price,
+      status: (status === "true"),
       thumbnail,
       code,
-      stock,
+      stock: +stock,
     };
     this.products.push(product);
     await this.saveToFile();
@@ -70,7 +71,7 @@ class ProductManager {
       product.price = options.price;
     }
     if (options.status !== undefined) {
-      product.status = options.price;
+      product.status = options.status;
     }
     if (options.thumbnail !== undefined) {
       product.thumbnail = options.thumbnail;

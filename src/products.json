@@ -121,13 +121,13 @@
   },
   {
     "pid": 13,
-      "title": "producto prueba13",
-      "description": "Este es un producto prueba",
-      "price": 200,
-      "status": true,
-      "thumbnail": "Sin Imagen",
-      "code": "abc123",
-      "stock": 25
+    "title": "producto prueba13",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "status": true,
+    "thumbnail": "Sin Imagen",
+    "code": "abc123",
+    "stock": 25
   },
   {
     "pid": 14,
@@ -138,5 +138,55 @@
     "thumbnail": "Sin Imagen",
     "code": "abc123",
     "stock": 25
+  },
+  {
+    "pid": 15,
+    "title": "producto prueba15",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "status": true,
+    "thumbnail": "Sin Imagen",
+    "code": "abc123",
+    "stock": 25
+  },
+  {
+    "pid": 16,
+    "title": "producto prueba16",
+    "description": "Este es un producto prueba",
+    "price": 200,
+    "status": true,
+    "thumbnail": "Sin Imagen",
+    "code": "abc123",
+    "stock": 25
+  },
+  {
+    "pid": 17,
+    "title": "Producto Prueba 17",
+    "description": "Este es un producto prueba",
+    "price": 250,
+    "status": true,
+    "thumbnail": "Sin imagen",
+    "code": "abc887",
+    "stock": 50
+  },
+  {
+    "pid": 18,
+    "title": "producto prueba18",
+    "description": "Este es un producto prueba",
+    "price": 8,
+    "status": true,
+    "thumbnail": "Sin imagen",
+    "code": "ixn2",
+    "stock": 55
+  },
+  {
+    "pid": 19,
+    "title": "producto prueba 19",
+    "description": "Esto es un producto prueba",
+    "price": 55,
+    "status": true,
+    "thumbnail": "Sin imagen",
+    "code": "123asd",
+    "stock": 50
   }
 ]
